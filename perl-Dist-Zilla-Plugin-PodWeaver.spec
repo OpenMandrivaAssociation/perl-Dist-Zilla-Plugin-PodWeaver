@@ -1,5 +1,5 @@
 %define upstream_name    Dist-Zilla-Plugin-PodWeaver
-%define upstream_version 3.093020
+%define upstream_version 3.093170
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -47,5 +47,3 @@ rm -rf %buildroot
 %doc Changes LICENSE README
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-
