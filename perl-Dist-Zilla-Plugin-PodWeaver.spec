@@ -1,5 +1,5 @@
 %define upstream_name    Dist-Zilla-Plugin-PodWeaver
-%define upstream_version 3.093170
+%define upstream_version 3.093321
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
