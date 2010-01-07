@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Do horrible things to POD, producing better docs
 License:    GPL+ or Artistic
@@ -17,8 +17,12 @@ BuildRequires: perl(Moose)
 BuildRequires: perl(Moose::Autobox)
 BuildRequires: perl(Pod::Elemental::PerlMunger)
 BuildRequires: perl(Pod::Weaver)
+
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
+
+# not auto-detected
+Requires: perl(Pod::Elemental::PerlMunger)
 
 %description
 PodWeaver is a work in progress, which rips apart your kinda-POD and
@@ -29,11 +33,10 @@ reconstructs it as boring old real POD.
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-
-%{make}
+%make
 
 %check
-%{make} test
+%make test
 
 %install
 rm -rf %buildroot
