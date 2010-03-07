@@ -1,9 +1,9 @@
 %define upstream_name    Dist-Zilla-Plugin-PodWeaver
-%define upstream_version 3.093321
+%define upstream_version 3.100650
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    Do horrible things to POD, producing better docs
 License:    GPL+ or Artistic
