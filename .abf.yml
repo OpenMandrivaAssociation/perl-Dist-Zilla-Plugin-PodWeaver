@@ -1,2 +1,4 @@
+removed_sources:
+  Dist-Zilla-Plugin-PodWeaver-3.101641.tar.gz: 572ab249b81fc9cdfe7e2889d696872df2580360
 sources:
-  "Dist-Zilla-Plugin-PodWeaver-3.101641.tar.gz": 572ab249b81fc9cdfe7e2889d696872df2580360
+  Dist-Zilla-Plugin-PodWeaver-4.005.tar.gz: fe84182119f364009b894e5ea2fc49e35aa40564
