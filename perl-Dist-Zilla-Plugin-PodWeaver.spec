@@ -1,16 +1,14 @@
 %define upstream_name    Dist-Zilla-Plugin-PodWeaver
-%define upstream_version 4.010
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	4.010
+Release:	2
 
 Summary:	Do horrible things to POD, producing better docs
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/rjbs/Dist-Zilla-Plugin-PodWeaver
-Source0:	https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Dist-Zilla-Plugin-PodWeaver-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Dist-Zilla-Plugin-PodWeaver-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -31,7 +29,7 @@ PodWeaver is a work in progress, which rips apart your kinda-POD and
 reconstructs it as boring old real POD.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
